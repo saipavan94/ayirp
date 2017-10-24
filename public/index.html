@@ -22,7 +22,7 @@
 <link rel="stylesheet" type="text/css" href="style/style.css" />
 </head>
 <body  ng-app="ayirp" ng-controller="mainController" onload="new p5(songSketch);" ng-cloak>
-<md-button class="md-raised md-warn" style="z-index:99999" ng-show="!menu" ng-click="menu = !menu" > back </md-button>
+<md-button class="md-raised md-warn" style="z-index:99999;position:absolute;" ng-show="!menu" ng-click="menu = !menu" > back </md-button>
 <div layout="column" ng-if="menu" layout-fill layout-align="center center">
 <div layout="row" flex="40" layout-wrap ng-cloak>
     <md-button class="md-raised md-warn" ng-click="play()" > Play </md-button>
