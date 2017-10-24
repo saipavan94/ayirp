@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Draw a shaky heart</title>
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/p5.js"></script>
+ <script language="javascript" type="text/javascript" src="js/sketch.js"></script>
+ <script language="javascript" type="text/javascript" src="addons/p5.sound.min.js"></script>
+ <script language="javascript" type="text/javascript" src="addons/p5.dom.min.js"></script>
+<script type="text/javascript" src="js/main_mouse.js"></script>
+
+<script type="text/javascript" src="js/draw.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="style/material.min.css">
+<link rel="stylesheet" href="style/main.css">
+<link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+<body  ng-app="ayirp" ng-controller="mainController" onload="new p5(songSketch);" ng-cloak>
+<div layout="column" ng-if="menu" layout-fill layout-align="center center">
+<div layout="row" flex="40" layout-wrap ng-cloak>
+    <md-button class="md-raised md-warn" ng-click="play()" > Play </md-button>
+    <md-button class="md-raised md-warn"  ng-click="draw()"> Draw </md-button>
+    <md-button class="md-raised md-warn" ng-click="paint()"> paint </md-button>
+ </div>
+</div>
+<div class='btn' id='btn-save' ng-if="saveBtn"> save </div>
+  <script src="angular/angular.min.js"></script>
+  <script src="angular/animate.min.js"></script>
+  <script src="angular/aria.min.js"></script>
+  <script src="angular/messages.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+
+<script src="script.js">
+
+</script>
+
+</body>
+</html>
